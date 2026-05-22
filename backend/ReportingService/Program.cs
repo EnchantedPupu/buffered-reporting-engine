@@ -12,7 +12,7 @@ builder.Services.AddStackExchangeRedisCache(options =>
 });
 
 builder.Services.AddSingleton<IConnectionMultiplexer>(_ =>
-    ConnectionMultiplexer.Connect("localhost:6379"));
+    ConnectionMultiplexer.Connect("127.0.0.1:6379,abortConnect=false"));
 builder.Services.AddHostedService<TransactionUpdateSubscriber>();
 
 builder.Services.AddCors(o => o.AddPolicy("AllowAll", builder =>

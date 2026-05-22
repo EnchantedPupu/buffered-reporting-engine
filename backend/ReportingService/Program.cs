@@ -6,13 +6,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddGrpc();
 
+var redisConnectionString = builder.Configuration.GetConnectionString("Redis")
+    ?? "127.0.0.1:6379,abortConnect=false";
+
 builder.Services.AddStackExchangeRedisCache(options =>
 {
-    options.Configuration = "localhost:6379";
+    options.Configuration = redisConnectionString;
 });
 
 builder.Services.AddSingleton<IConnectionMultiplexer>(_ =>
-    ConnectionMultiplexer.Connect("127.0.0.1:6379,abortConnect=false"));
+    ConnectionMultiplexer.Connect(redisConnectionString));
 builder.Services.AddHostedService<TransactionUpdateSubscriber>();
 
 builder.Services.AddCors(o => o.AddPolicy("AllowAll", builder =>

@@ -1,0 +1,3 @@
+obj\Debug\net9.0/Transaction.cs \
+obj\Debug\net9.0/TransactionGrpc.cs: C:/Users/l33su/.nuget/packages/grpc.tools/2.80.0/build/native/include/google/protobuf/timestamp.proto\
+ ../../proto/Transaction.proto

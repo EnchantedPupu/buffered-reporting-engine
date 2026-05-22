@@ -1,0 +1,22 @@
+syntax = "proto3";
+package reporting;
+
+import "google/protobuf/timestamp.proto";
+
+service TransactionService {
+  rpc StreamTransactions (ReportRequest) returns (stream TransactionResponse);
+}
+
+message ReportRequest {
+  string client_id = 1;
+  int32 batch_size = 2;
+}
+
+message TransactionResponse {
+  string id = 1;
+  string category = 2;        // e.g. "RETAIL", "FOOD", "TRAVEL"
+  double amount = 3;
+  string currency = 4;
+  google.protobuf.Timestamp timestamp = 5;
+  string status = 6;          // "COMPLETED", "PENDING", "FAILED"
+}

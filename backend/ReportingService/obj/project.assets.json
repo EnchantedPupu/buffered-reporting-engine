@@ -1105,11 +1105,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\work\\buffered_reporting_engine\\backend\\ReportingService\\ReportingService.csproj",
+      "projectUniqueName": "C:\\dev\\work\\buffered-reporting-engine\\backend\\ReportingService\\ReportingService.csproj",
       "projectName": "ReportingService",
-      "projectPath": "C:\\dev\\work\\buffered_reporting_engine\\backend\\ReportingService\\ReportingService.csproj",
+      "projectPath": "C:\\dev\\work\\buffered-reporting-engine\\backend\\ReportingService\\ReportingService.csproj",
       "packagesPath": "C:\\Users\\l33su\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\work\\buffered_reporting_engine\\backend\\ReportingService\\obj\\",
+      "outputPath": "C:\\dev\\work\\buffered-reporting-engine\\backend\\ReportingService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\l33su\\AppData\\Roaming\\NuGet\\NuGet.Config"

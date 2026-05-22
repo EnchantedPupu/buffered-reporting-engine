@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "drw9UIRtTCQ=",
+  "dgSpecHash": "Rmdv1rkjGKc=",
   "success": true,
-  "projectFilePath": "C:\\dev\\work\\buffered_reporting_engine\\backend\\ReportingService\\ReportingService.csproj",
+  "projectFilePath": "C:\\dev\\work\\buffered-reporting-engine\\backend\\ReportingService\\ReportingService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\l33su\\.nuget\\packages\\google.protobuf\\3.27.0\\google.protobuf.3.27.0.nupkg.sha512",
     "C:\\Users\\l33su\\.nuget\\packages\\grpc.aspnetcore\\2.65.0\\grpc.aspnetcore.2.65.0.nupkg.sha512",

@@ -38,6 +38,12 @@ From the repository root:
 docker compose up -d redis
 ```
 
+or 
+
+```bash
+docker run --name buffered-reporting-engine-redis-1 -p 6379:6379 -d redis:7-alpine
+```
+
 Redis will be available at localhost:6379.
 
 ### 2) Start the backend
